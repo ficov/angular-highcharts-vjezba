@@ -1,0 +1,11 @@
+<div class="charts">
+  <div class="line" [chart]="chart">
+  </div>
+  <form [formGroup]="dateRangeForm" (ngSubmit)="onSubmit()" class="form">
+    <label for="start">Start date: </label>
+    <input id="start" type="date" formControlName="startDate">
+    <label for="end"> End date: </label>
+    <input id="end" type="date" formControlName="endDate">
+    <button type="submit">Filter</button>
+  </form>
+</div>
